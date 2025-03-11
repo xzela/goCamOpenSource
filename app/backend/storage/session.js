@@ -100,8 +100,8 @@ class AvsStorageSession {
             },
             data: {
                 userData: JSON.stringify(sessionData.userData),
-                state: AvsStorageSession.getStateMap()[AvsStorageSession.SESSION_STATE_SUCCESS],
-                stateInt: AvsStorageSession.SESSION_STATE_SUCCESS,
+                state: AvsStorageSession.getStateMap()[sessionStateInt],
+                stateInt: sessionStateInt,
                 sessionId: sessionId,
                 errorCode: errorCode,
                 deviceType: sessionData.deviceType,

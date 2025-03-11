@@ -132,7 +132,7 @@ export function load(app: Express.Application, storage: AvsStorageSession) {
 		}
 
 		if (deviceLocationVerification == DEVICE_LOCATION_VERIFICATION_INTERNAL) {
-			if (!(req.session.successKey && token == req.session.successKey)) {
+			if (!(req.session.failKey && token == req.session.failKey)) {
 				sessionResult.errorCode = 30013;
 				storage.updateState(req.session.sessionStartId, sessionResult);
 				res.send(AvsResponse.errorResponse(30013, 'Invalid token'));

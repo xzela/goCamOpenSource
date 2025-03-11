@@ -102,7 +102,7 @@ function load(app, storage) {
             return;
         }
         if (deviceLocationVerification == DEVICE_LOCATION_VERIFICATION_INTERNAL) {
-            if (!(req.session.successKey && token == req.session.successKey)) {
+            if (!(req.session.failKey && token == req.session.failKey)) {
                 sessionResult.errorCode = 30013;
                 storage.updateState(req.session.sessionStartId, sessionResult);
                 res.send(response_1.AvsResponse.errorResponse(30013, 'Invalid token'));
