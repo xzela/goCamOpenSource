@@ -2219,6 +2219,7 @@ var AvsFactory;
                         StartPage.instance.stopApiPolling();
                         StartPage.instance.ui.ErrorMessageArea.hide();
                         StartPage.instance.entity.VerificationStepGlobal.deviceLocationVerification = Avs.Entity.VerificationStepGlobal.DEVICE_LOCATION_VERIFICATION_EXTERNAL;
+                        StartPage.instance.entity.VerificationStepGlobal.verificationComplete = true;
                         StartPage.Method.goToSuccessStep();
                     }
                 });
