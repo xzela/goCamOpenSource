@@ -122,6 +122,7 @@ var AvsFactory;
                     if (typeof data.isValidated !== 'undefined' && data.isValidated) {
                         ResultPageFail.instance.stopApiPolling();
                         ResultPageFail.instance.entity.VerificationStepGlobal.deviceLocationVerification = Avs.Entity.VerificationStepGlobal.DEVICE_LOCATION_VERIFICATION_EXTERNAL;
+                        ResultPageFail.instance.entity.VerificationStepGlobal.verificationComplete = true;
                         ResultPageFail.Method.goToSuccessStep();
                     }
                 });

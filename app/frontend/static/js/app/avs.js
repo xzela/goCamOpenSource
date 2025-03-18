@@ -6535,18 +6535,18 @@ var Avs;
                         {
                             "year": 2013,
                             "tesseractConfig": {
-                                "tessedit_char_whitelist": "1234567890. ",
+                                "tessedit_char_whitelist": "1234567890<",
                                 "tessedit_ocr_engine_mode": 2
                             },
                             "stripWhiteSpace": false,
                             "textMatcherRule": [
-                                "/3.*([0-9]{2}).*([0-9]{2}).*([0-9]{4})/gi"
+                                "/\\<[0-9]{1}([0-9]{2})([0-9]{2})([0-9]{2})/gi"
                             ],
                             "dateComponentsPosition": [
                                 {
-                                    "day": 1,
+                                    "day": 3,
                                     "month": 2,
-                                    "year": 3
+                                    "year": 1
                                 }
                             ],
                             "monthNameLanguage": "en",
@@ -6560,19 +6560,19 @@ var Avs;
                                     "ratioType": 1
                                 },
                                 "birthDateArea": {
-                                    "width": 237,
-                                    "height": 70,
-                                    "top": 89,
-                                    "left": 122
+                                    "width": 250,
+                                    "height": 87,
+                                    "top": 285,
+                                    "left": 241
                                 },
                                 "faceArea": {
-                                    "width": 109,
-                                    "height": 105,
-                                    "top": 142,
+                                    "width": 110,
+                                    "height": 104,
+                                    "top": 145,
                                     "left": 34,
                                     "birthDateAreaDistance": {
-                                        "top": -53,
-                                        "left": 88
+                                        "top": 140,
+                                        "left": 207
                                     }
                                 }
                             },
@@ -6581,44 +6581,44 @@ var Avs;
                         {
                             "year": 2015,
                             "tesseractConfig": {
-                                "tessedit_char_whitelist": "1234567890. ",
+                                "tessedit_char_whitelist": "1234567890<",
                                 "tessedit_ocr_engine_mode": 2
                             },
                             "stripWhiteSpace": false,
                             "textMatcherRule": [
-                                "/3.*([0-9]{2}).*([0-9]{2}).*([0-9]{4})/gi"
+                                "/\\<[0-9]{1}([0-9]{2})([0-9]{2})([0-9]{2})/gi"
                             ],
                             "dateComponentsPosition": [
                                 {
-                                    "day": 1,
+                                    "day": 3,
                                     "month": 2,
-                                    "year": 3
+                                    "year": 1
                                 }
                             ],
                             "monthNameLanguage": "en",
-                            "brightness": 20,
+                            "brightness": 10,
                             "contrast": 40,
                             "threshold": 0,
                             "idSizeList": {
                                 "container": {
-                                    "width": 600,
-                                    "height": 381,
-                                    "ratioType": 1
+                                    "width": 0,
+                                    "height": 0,
+                                    "ratioType": 2
                                 },
                                 "birthDateArea": {
-                                    "width": 218,
-                                    "height": 65,
-                                    "top": 90,
-                                    "left": 129
+                                    "width": 255,
+                                    "height": 74,
+                                    "top": 298,
+                                    "left": 211
                                 },
                                 "faceArea": {
-                                    "width": 100,
-                                    "height": 107,
-                                    "top": 141,
-                                    "left": 48,
+                                    "width": 104,
+                                    "height": 102,
+                                    "top": 142,
+                                    "left": 47,
                                     "birthDateAreaDistance": {
-                                        "top": -51,
-                                        "left": 81
+                                        "top": 156,
+                                        "left": 164
                                     }
                                 }
                             },

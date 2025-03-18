@@ -14,6 +14,7 @@ namespace AvsFactory {
 							instance.stopApiPolling();
 							instance.entity.VerificationStepGlobal.deviceLocationVerification = Avs.Entity.VerificationStepGlobal.DEVICE_LOCATION_VERIFICATION_EXTERNAL;
 
+							instance.entity.VerificationStepGlobal.verificationComplete = true;
 							Method.goToSuccessStep();
 
 						}
