@@ -23,19 +23,19 @@ namespace AvsFactory {
 
 			public static FACE_API_WEIGHTS_PATH = '/static/js/appFiles/faw/';
 
-			public static MAX_VALID_FACE_SCAN_NUMBER = 5;
+			public static MAX_VALID_FACE_SCAN_NUMBER = 3;
 			public static MAX_TOTAL_FACE_SCAN_NUMBER = 40;
 
 			public static MAX_TOTAL_FACE_EXPRESSION_SCAN_NUMBER = 40;
 
 			public static MIN_ALLOWED_AVERAGE_AGE = 25;
 
-			public static FACE_SCAN_INTERVAL_MS = 500;
+			public static FACE_SCAN_INTERVAL_MS = 400;
 
 			public static EVENT_NAME_PREFIX = 'selfieAgeDetectionPage';
 
 			public static MAX_FACE_DISTANCE_TO_MATCH = 0.5;
-			public static MIN_VALID_FACE_MATCH       = 5;
+			public static MIN_VALID_FACE_MATCH       = 1;
 
 			public static BOUNDARY_TOP    = 40;
 			public static BOUNDARY_BOTTOM = 40;
