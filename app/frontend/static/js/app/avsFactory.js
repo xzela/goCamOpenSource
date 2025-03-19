@@ -1372,7 +1372,7 @@ var AvsFactory;
             Config.FACE_SCAN_INTERVAL_MS = 400;
             Config.EVENT_NAME_PREFIX = 'selfieAgeDetectionPage';
             Config.MAX_FACE_DISTANCE_TO_MATCH = 0.5;
-            Config.MIN_VALID_FACE_MATCH = 1;
+            Config.MIN_VALID_FACE_MATCH = 2;
             Config.BOUNDARY_TOP = 40;
             Config.BOUNDARY_BOTTOM = 40;
             Config.BOUNDARY_LEFT = 40;
