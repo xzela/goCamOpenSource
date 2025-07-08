@@ -50,6 +50,8 @@ By running this project you will be able to go through both types of verificatio
 
 Additionally, we provide a standalone implementation of go.cam in various programming languages. Please check the `example` folder for more information about this.
 
+A MIT license alternative for the example implementation code can be found inside this repository: https://github.com/Godotcam/goCamOpenSourceExamples.
+
 ## Project structure
 
 This project is using typescript for both frontend and backend (express js) scripts, sass for the styling part and twig for the template part.
