@@ -1,12 +1,11 @@
-import Express = require('express');
-import URL = require('url');
-import {AvsEncryption}     from '../lib/encryption';
-import {config}            from "../config";
-import {AvsResponse}       from "../lib/response";
-import {AvsStorageSession} from "../storage/session";
-
-const fs   = require('node:fs');
-const path = require('path');
+import Express from 'express';
+import fs from 'node:fs';
+import path from 'path';
+import url from 'url';
+import { config } from "../config";
+import { AvsEncryption } from '../lib/encryption';
+import { AvsResponse } from "../lib/response";
+import { AvsStorageSession } from "../storage/session";
 
 export function load(app: Express.Application, storage: AvsStorageSession) {
 
@@ -95,7 +94,7 @@ export function load(app: Express.Application, storage: AvsStorageSession) {
 				d: requestPayload
 			},
 		};
-		const urlTokenString = URL.format(urlToken);
+		const urlTokenString = url.format(urlToken);
 
 		const urlIframe       = {
 			protocol: config.httpServerProtocol,
@@ -106,7 +105,7 @@ export function load(app: Express.Application, storage: AvsStorageSession) {
 				d: requestPayload
 			},
 		};
-		const urlIframeString = URL.format(urlIframe);
+		const urlIframeString = url.format(urlIframe);
 
 		res.send(AvsResponse.successResponse({
 			payload  : requestPayload,
@@ -148,7 +147,7 @@ export function load(app: Express.Application, storage: AvsStorageSession) {
 		fs.appendFile(
 			path.join(__dirname, './../../../log/callback.log'),
 			responseString,
-			(err: Error) => {
+			(err: any) => {
 				if (err) {
 					res.send(AvsResponse.errorResponse(30004, 'Callback file log error: ' + err.toString()));
 					return;
