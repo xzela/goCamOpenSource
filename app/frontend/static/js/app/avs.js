@@ -18900,7 +18900,7 @@ var Avs;
                     }
                     return this.show();
                 };
-                QrCode.QR_CODE_SIZE = 10;
+                QrCode.QR_CODE_SIZE = 15;
                 return QrCode;
             }(Handler.Common));
             Handler.QrCode = QrCode;
