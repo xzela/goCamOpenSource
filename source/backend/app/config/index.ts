@@ -5,12 +5,13 @@ dotenv.config({ quiet: true });
 // Type definition for environmental variables (.env)
 declare var process: {
   env: {
+		DOCKER_SERVER_HOST: string;
 		HTTP_SERVER_PROTOCOL: string;
 		HTTP_SERVER_HOST: string;
 		HTTP_SERVER_PORT: number;
 		ENCRYPTION_KEY: string;
 		ENCRYPTION_ALGORITHM: string;
-		ENABLE_FRONTEND_DEBUG: boolean
+		ENABLE_FRONTEND_DEBUG: boolean;
 	}
 }
 
@@ -19,6 +20,8 @@ const configObject = {
 	httpServerProtocol: process.env.HTTP_SERVER_PROTOCOL || 'http',
 	httpServerHost    : process.env.HTTP_SERVER_HOST || 'localhost',
 	httpServerPort    : process.env.HTTP_SERVER_PORT || 3300,
+
+	dockerServerHost: process.env.DOCKER_SERVER_HOST || undefined,
 
 	htmlFilePath: './app/frontend/views/',
 

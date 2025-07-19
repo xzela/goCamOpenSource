@@ -50,6 +50,7 @@ tokenRoute.load(app, avsStorageInstance);
 resultRoute.load(app, avsStorageInstance);
 indexRoute.load(app, avsStorageInstance);
 
-server.listen(config.httpServerPort, config.httpServerHost, () => {
+const host = config.dockerServerHost || config.httpServerHost;
+server.listen(config.httpServerPort, host, () => {
 	console.log('http server started on: ' + config.httpServerProtocol + '://'  + config.httpServerHost + ':' + config.httpServerPort);
 });
